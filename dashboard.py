@@ -3,8 +3,10 @@ import streamlit as st
 
 reponse = requests.get("https://scoring-bank.vercel.app/test")
 # .json()
+st.write("Données de l API:")
 st.write(reponse)
-# st.write(reponse.txt)
+print(reponse)
+st.write(response.json())
 
 
 
