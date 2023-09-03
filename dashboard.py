@@ -1,25 +1,38 @@
-import requests
-import streamlit as st
+import requests as rq
+from datetime import datetime
 
-# data = requests.get("https://api-mu-nine.vercel.app/").json()
-# st.write("My 2")
+BASE_URL = 'https://api-mu-nine.vercel.app'
+payload = {'input' : 'ENTER SOME INPUT HERE'}
+response = rq.getg(BASE_URL,params = payload)
+json_values = response.json()
+rq_input, timestamp, letter_count = json_values['input'], json_values['timestamp'], json_values['letter_count']
+print(f'Input is: {rq_input}')
+print(f'Date is: {datetime.fromtimestamp(timestamp)}')
+print(f' Letter count is: {Ietter_count}')
 
-# url = "https://api-mu-nine.vercel.app/"
-# myobj = {'somekey': 'somevalue'}
-# response = requests.post(url, data = myobj)
-response = requests.post("https://api-mu-nine.vercel.app/").json()
-st.write("My 'API")
-if response.status_code == 200:
-  st.write("My 2")
-  st.write(response.text)
+
+# import requests
+# import streamlit as st
+
+# # data = requests.get("https://api-mu-nine.vercel.app/").json()
+# # st.write("My 2")
+
+# # url = "https://api-mu-nine.vercel.app/"
+# # myobj = {'somekey': 'somevalue'}
+# # response = requests.post(url, data = myobj)
+# response = requests.post("https://api-mu-nine.vercel.app/").json()
+# st.write("My 'API")
+# if response.status_code == 200:
+#   st.write("My 2")
+#   st.write(response.text)
   
-else:
-  st.write("ERR")
+# else:
+#   st.write("ERR")
   
-  st.write(response.status_code)
+#   st.write(response.status_code)
   
-  st.write(response.text)
-  print("Erreur lors de la requête à l'API")
+#   st.write(response.text)
+#   print("Erreur lors de la requête à l'API")
   
 # import requests
 
