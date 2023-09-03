@@ -1,5 +1,4 @@
 import requests
-import streamlit as st
 
 # data = requests.get("https://api-mu-nine.vercel.app/").json()
 
@@ -7,9 +6,6 @@ url = 'https://api-mu-nine.vercel.app/'
 myobj = {'somekey': 'somevalue'}
 x = requests.post(url, data = myobj)
 print(x.text)
-
-st.write(data)
-
 
 # import requests
 
