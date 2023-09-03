@@ -4,7 +4,7 @@ import streamlit as st
 # data = requests.get("https://api-mu-nine.vercel.app/").json()
 
 
-url = 'https://api-mu-nine.vercel.app/'
+url = "https://api-mu-nine.vercel.app/"
 myobj = {'somekey': 'somevalue'}
 response = requests.post(url, data = myobj)
 st.write("My 'API")
