@@ -5,8 +5,12 @@ import requests
 url = 'https://api-mu-nine.vercel.app/'
 myobj = {'somekey': 'somevalue'}
 x = requests.post(url, data = myobj)
-print(x.text)
 
+if response.status_code == 200:
+  print(x.text)
+else:
+    st.error("Erreur lors de la requête à l'API")
+  
 # import requests
 
 # # URL de l'API que vous souhaitez appeler
