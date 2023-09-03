@@ -7,7 +7,7 @@ import streamlit as st
 # url = "https://api-mu-nine.vercel.app/"
 # myobj = {'somekey': 'somevalue'}
 # response = requests.post(url, data = myobj)
-response = requests.get("https://api-mu-nine.vercel.app/").json()
+response = requests.post("https://api-mu-nine.vercel.app/").json()
 st.write("My 'API")
 if response.status_code == 200:
   st.write("My 2")
