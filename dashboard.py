@@ -1,7 +1,7 @@
 import requests as rq
 from datetime import datetime
 
-API_URL = 'https://api-1ugufugd5-adamxkadd.vercel.app/'
+API_URL = 'https://api-1ugufugd5-adamxkadd.vercel.app'
 data = {'input' : 'ENTER SOME INPUT HERE'}
 response = rq.get(API_URL,params=data)
 json_values = response.json()
