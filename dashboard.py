@@ -1,10 +1,12 @@
 import requests
-import streamlit as st
+# import streamlit as st
 
-# data = requests.get("'https://jsonplaceholder.typicode.com/todos/1'").json()
-data = requests.get("'https://api-mu-nine.vercel.app/'").json()
-# data = requests.get("'https://api-mu-nine.vercel.app/'").json()
+# data = requests.get("https://api-mu-nine.vercel.app/").json()
 
+url = 'https://api-mu-nine.vercel.app/'
+myobj = {'somekey': 'somevalue'}
+x = requests.post(url, data = myobj)
+print(x.text)
 
 st.write(data)
 
