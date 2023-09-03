@@ -1,7 +1,7 @@
 import requests
 import streamlit as st
 
-response = (requests.get("https://scoring-bank.vercel.app/test")).json()
+response = (requests.get("https://scoring-bank.vercel.app/")).json()
 st.write("Données de l API :")
 st.write(response)
 
