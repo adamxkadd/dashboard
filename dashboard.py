@@ -13,9 +13,12 @@ if response.status_code == 200:
   st.write(response.text)
   
 else:
-    st.write("ERR")
-    st.write(response.text)
-    print("Erreur lors de la requête à l'API")
+  st.write("ERR")
+  
+  st.write(response.status_code)
+  
+  st.write(response.text)
+  print("Erreur lors de la requête à l'API")
   
 # import requests
 
