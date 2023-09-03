@@ -1,6 +1,6 @@
-# import streamlit as st
+import streamlit as st
 # from fastapi import FastAPI
-import FastAPI
+# import FastAPI
 # # Initialisation de l'application FastAPI
 # app_fastapi = FastAPI()
 
@@ -10,7 +10,7 @@ import FastAPI
 #     return {"message": "Bienvenue dans l'API FastAPI"}
 
 # # Interface Streamlit
-# st.title("Application Streamlit avec API FastAPI")
+st.title("Application Streamlit avec API FastAPI")
 
 # # Afficher un texte d'introduction
 # st.write("Ceci est une démonstration d'une API FastAPI intégrée dans Streamlit.")
