@@ -2,7 +2,8 @@ import requests
 import streamlit as st
 
 # data = requests.get("'https://jsonplaceholder.typicode.com/todos/1'").json()
-data = requests.get("'https://api-mu-nine.vercel.app/'").json()
+data = requests.get("https://api-mu-nine.vercel.app/").json()
+# data = requests.get("'https://api-mu-nine.vercel.app/'").json()
 
 
 st.write(data)
