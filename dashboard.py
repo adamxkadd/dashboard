@@ -1,6 +1,7 @@
 import requests
 
 # data = requests.get("https://api-mu-nine.vercel.app/").json()
+print("My 'API")
 
 url = 'https://api-mu-nine.vercel.app/'
 myobj = {'somekey': 'somevalue'}
