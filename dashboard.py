@@ -1,9 +1,9 @@
 import requests as rq
 from datetime import datetime
 
-BASE_URL = 'https://api-mu-nine.vercel.app'
-payload = {'input' : 'ENTER SOME INPUT HERE'}
-response = rq.get(BASE_URL,params = payload)
+API_URL = 'https:////api-1ugufugd5-adamxkadd.vercel.app/'
+data = {'input' : 'ENTER SOME INPUT HERE'}
+response = rq.get(API_URL,params=data)
 json_values = response.json()
 rq_input, timestamp, letter_count = json_values['input'], json_values['timestamp'], json_values['letter_count']
 print(f'Input is: {rq_input}')
