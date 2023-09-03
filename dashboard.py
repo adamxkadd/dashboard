@@ -9,7 +9,7 @@ response = requests.post(url, data = myobj)
 if response.status_code == 200:
   print(response.text)
 else:
-    st.error("Erreur lors de la requête à l'API")
+    print("Erreur lors de la requête à l'API")
   
 # import requests
 
