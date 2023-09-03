@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-url = "https://api-mu-nine.vercel.app/hello"
+url = "https://api-gvbwiqadg-adamxkadd.vercel.app//hello"
 data = json.dumps({"msg": "c moi"})
 headers = {'Content-Type': 'application/json'}
 response = requests.post(url=url, data=data, headers=headers)
