@@ -1,9 +1,10 @@
 import requests
 import streamlit as st
 
-data = requests.get("https://flask-hello-world-tan-zeta.vercel.app/")
+reponse = requests.get("https://flask-hello-world-tan-zeta.vercel.app/")
 # .json()
-st.write(data)
+st.write(reponse)
+st.write(reponse.txt)
 
 
 
