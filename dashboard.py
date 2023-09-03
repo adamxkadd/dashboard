@@ -1,19 +1,27 @@
 import requests
+import streamlit as st
 
-# URL de l'API que vous souhaitez appeler
-url = "https://scoring.streamlit.app/donnees"
+data = requests.get("'https://jsonplaceholder.typicode.com/todos/1'").json()
 
-# Effectuer la requête GET à l'API
-response = requests.get(url)
+st.write(data)
 
-# Vérifier si la requête a réussi (code de statut 200)
-if response.status_code == 200:
-    # Récupérer les données JSON de la réponse
-    donnees = response.json()
-    print("Données de l'API:")
-    print(donnees)
-else:
-    print("La requête à l'API a échoué avec le code de statut:", response.status_code)
+
+# import requests
+
+# # URL de l'API que vous souhaitez appeler
+# url = "https://scoring.streamlit.app/donnees"
+
+# # Effectuer la requête GET à l'API
+# response = requests.get(url)
+
+# # Vérifier si la requête a réussi (code de statut 200)
+# if response.status_code == 200:
+#     # Récupérer les données JSON de la réponse
+#     donnees = response.json()
+#     print("Données de l'API:")
+#     print(donnees)
+# else:
+#     print("La requête à l'API a échoué avec le code de statut:", response.status_code)
 
 
 
