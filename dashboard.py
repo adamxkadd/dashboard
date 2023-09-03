@@ -3,7 +3,7 @@ from datetime import datetime
 
 BASE_URL = 'https://api-mu-nine.vercel.app'
 payload = {'input' : 'ENTER SOME INPUT HERE'}
-response = rq.getg(BASE_URL,params = payload)
+response = rq.get(BASE_URL,params = payload)
 json_values = response.json()
 rq_input, timestamp, letter_count = json_values['input'], json_values['timestamp'], json_values['letter_count']
 print(f'Input is: {rq_input}')
