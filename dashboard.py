@@ -7,7 +7,7 @@ myobj = {'somekey': 'somevalue'}
 response = requests.post(url, data = myobj)
 
 if response.status_code == 200:
-  print(x.text)
+  print(response.text)
 else:
     st.error("Erreur lors de la requête à l'API")
   
