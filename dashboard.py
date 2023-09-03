@@ -1,20 +1,10 @@
-import streamlit as st
-import requests
-import json
+st.title("Tableau de bord Streamlit")
 
-url = "https://api-mu-nine.vercel.app/hello"
-data = json.dumps({"msg": "c moi"})
-headers = {'Content-Type': 'application/json'}
-response = requests.post(url=url, data=data, headers=headers)
+# Créez un formulaire pour saisir des données
+st.header("Saisissez des données:")
+user_input = st.text_input("Entrez des données:", "Exemple de données")
 
-# Affiche les données envoyées dans la requête
-st.write("Contenu de data:")
-st.write(data)
-
-# Vérifie si la requête a réussi
-if response.status_code == 200:
-    st.write("Réponse de l'API:")
-   # st.write(response.text)
-    st.write(response.json())
-else:
-    st.write("La requête a échoué avec le code de statut:", response.status_code)
+# Bouton pour envoyer les données à l'API
+if st.button("Predire"):
+    data = {"input_data": user_input}
+    response = requests.post(f"{API_URL}/predict/", json=data)
