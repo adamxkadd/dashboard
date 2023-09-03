@@ -1,5 +1,5 @@
 import requests
-# import streamlit as st
+import streamlit as st
 
 # data = requests.get("https://api-mu-nine.vercel.app/").json()
 
