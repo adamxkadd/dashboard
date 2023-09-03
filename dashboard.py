@@ -1,7 +1,7 @@
 import requests
 
 # URL de l'API que vous souhaitez appeler
-url = "https://api-mu-nine.vercel.app/donnees"
+url = "https://scoring.streamlit.app/donnees"
 
 # Effectuer la requête GET à l'API
 response = requests.get(url)
