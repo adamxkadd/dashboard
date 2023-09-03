@@ -1,14 +1,19 @@
-import requests as rq
-from datetime import datetime
+import requests
+import streamlit as st
 
-API_URL = 'https://api-1ugufugd5-adamxkadd.vercel.app'
-data = {'input' : 'ENTER SOME INPUT HERE'}
-response = rq.get(API_URL,params=data)
-json_values = response.json()
-rq_input, timestamp, letter_count = json_values['input'], json_values['timestamp'], json_values['letter_count']
-print(f'Input is: {rq_input}')
-print(f'Date is: {datetime.fromtimestamp(timestamp)}')
-print(f' Letter count is: {Ietter_count}')
+data = requests.get("'https://flask-hello-world-tan-zeta.vercel.app/'").json()
+st.write(data)
+
+
+
+# API_URL = 'https://flask-hello-world-tan-zeta.vercel.app/'
+# data = {'input' : 'ENTER SOME INPUT HERE'}
+# response = rq.get(API_URL,params=data)
+# json_values = response.json()
+# rq_input, timestamp, letter_count = json_values['input'], json_values['timestamp'], json_values['letter_count']
+# print(f'Input is: {rq_input}')
+# print(f'Date is: {datetime.fromtimestamp(timestamp)}')
+# print(f' Letter count is: {Ietter_count}')
 
 
 # import requests
